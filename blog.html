@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body class="poppins-font bg-[#F4F7FF] p-3">
+    <header class=" container mx-auto ">
+        <div class="navbar bg-white rounded-xl">
+            <div class="navbar-start">
+
+                <a class="btn btn-ghost text-xl">
+                    <img class="w-7 lg:w-10" src="./assets/logo.png" alt="">
+                    <span class="text-2xl lg:text-3xl font-normal">Dev<span class="font-bold">Board</span></span>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <a id="page" class="btn bg-[#3752FD] hover:bg-[#2643ff] text-white">Back to Desk</a>
+            </div>
+        </div>
+    </header>
+    <main class="mt-6">
+        <h2 class="text-2xl lg:text-3xl font-bold text-center">Blog</h2>
+        <div class="mt-10 space-y-5">
+
+            <div class=" bg-white p-4 rounded-lg">
+                <h3 class="text-xl lg:text-2xl font-semibold border-dashed border-b-2 border-gray-200 mb-5 pb-6">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <p class="text-gray-500 text-xs lg:text-[16px]">DOM এ একটি Element নির্বাচন করার জন্য- By ID,  By Class Name,  By Tag Name,  By Query Selector,  By QuerySelectorAll এগুলো ব্যবহার করা হয়।</p> 
+            </div>
+
+            <div class=" bg-white p-4 rounded-lg">
+                <h3 class="text-xl lg:text-2xl font-semibold border-dashed border-b-2 border-gray-200 mb-5 pb-6">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <p class="text-xs lg:text-[16px] text-gray-500">innerHTML দিয়ে সাধারনত একটি Element এর ভিতরে  HTML সেট করে  এবং কোনো HTML কে পেতে গেলে innerHTML লাগে। অন্যদিকে innerText  Element এর ভিতরের মানকে রিটার্ন করে অথবা সেটও করে। যখন কোনো মানের প্রয়োজন তখন innerText ব্যবহার করা হয়। textContent এইটা সম্পর্কে ভালো জানি না।</p> 
+            </div>
+
+            <div class=" bg-white p-4 rounded-lg">
+                <h3 class="text-xl lg:text-2xl font-semibold border-dashed border-b-2 border-gray-200 mb-5 pb-6">Question-3: What is event delegation in the DOM?</h3>
+                <p class="text-xs lg:text-[16px] text-gray-500">ইভেন্ট ডেলিগেশন হলো জাভাস্ক্রিপ্টের একটি কৌশল যেখানে একটি ইভেন্ট লিসেনারকে চাইল্ড এলিমেন্টে একাধিক লিসেনার যোগ করার পরিবর্তে একটি প্যারেন্ট এলিমেন্টের সাথে যুক্ত করা হয়। যেখানে ইভেন্টগুলি চাইল্ড থেকে প্যারেন্ট এলিমেন্ট হয়।</p> 
+            </div>
+
+            <div class=" bg-white p-4 rounded-lg">
+                <h3 class="text-xl lg:text-2xl font-semibold border-dashed border-b-2 border-gray-200 mb-5 pb-6">Question-4: What is event bubbling in the DOM?</h3>
+                <p class="text-xs lg:text-[16px] text-gray-500">ইভেন্ট বাবলিং হল ইভেন্ট প্রচারের একটি পর্যায় যেখানে একটি ইভেন্ট টার্গেট এলিমেন্ট থেকে শুরু হয় এবং DOM এর মূল এলিমেন্টগুলির উপরে চলে যায়।</p> 
+            </div>
+
+            <div class=" bg-white p-4 rounded-lg">
+                <h3 class="text-xl lg:text-2xl font-semibold border-dashed border-b-2 border-gray-200 mb-5 pb-6">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <p class="text-xs lg:text-[16px] text-gray-500">জাভাস্ক্রিপ্টে DOM API ব্যবহার করে Element create , add এবং remove করা যায়।</p> 
+            </div>
+            
+        </div>
+    </main>
+    <script>
+        document.getElementById('page').addEventListener('click', function () {
+            window.location.href = './index.html'
+        })
+    </script>
+
+</body>
+
+</html>
